@@ -1,13 +1,8 @@
 #include <stdio.h>
-int strlength(char string[])
-{
-    int x;
-    for (x = 0; string[x]; x++) {}
-    return x;
-}
 
 int main() {
-    char list[] = "ana pretarrona";
-    int count = strlength(list);
-    printf("%s COUNT %d\n", list, count);
+    char name[6];
+    printf("What's Your name? ");
+    scanf("%5s", name);
+    printf("Ok, %s, I love you. Thank you.\n", name);
 }
