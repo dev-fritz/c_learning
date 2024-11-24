@@ -1,3 +1,4 @@
+# include <stdbool.h>
 # include <stdio.h>
 
 double sum(double n1, double n2) {
@@ -16,6 +17,10 @@ double mul(double n1, double n2) {
     return n1 * n2;
 }
 
+bool is_even(int number) {
+    return number % 2 == 0;
+}
+
 int main () {
     double n1;
     double n2;
@@ -27,4 +32,6 @@ int main () {
     printf("Subt = %.2lf\n", sub(n1, n2));
     printf("Div = %.2lf\n", division(n1, n2));
     printf("Mult = %.2lf\n", mul(n1, n2));
+    printf("N1 is: %d\n", is_even(n1));
+    printf("N2 is: %d\n", is_even(n2));
 }
